@@ -1,0 +1,90 @@
+.border_class{
+    background-color: darkblue; 
+    border-bottom-right-radius: 20%; 
+    border-bottom-left-radius: 20%;
+}
+
+.mx-6{
+    margin-left: -2rem;
+}
+
+.input-group{
+    width: 55%;
+}
+
+.flex-wrap{
+    flex-wrap: nowrap !important ;
+}
+
+.m6{
+    margin-top: -5.25rem !important;
+    margin-left: 8.23rem ;
+}
+
+.active_link {
+    color: blue;
+    background-color: #b5bbf8 !important;
+    
+    text-align: center;
+    border-radius: 30px;
+    
+  }
+
+  .f10{
+    font-size: 18px !important;
+  }
+
+  .btn-secondary{
+    color: white;
+    background-color: rgb(235, 112, 24);
+    border-color:  orange;
+
+  }
+
+  .bcolor{
+    border-left: solid 6px red !important;
+    width: 60%;
+  }
+@media (min-width: 320px) and (max-width: 992px) { 
+
+    .border_class{
+        background-color: darkblue; 
+        border-bottom-right-radius: 0%; 
+        border-bottom-left-radius: 0%;
+    }
+    
+    .brnodisplay {
+        display: none;
+    }
+
+    .input-group{
+        width: 100% !important;
+    }
+
+    .flex-wrap{
+        flex-wrap: wrap !important;
+    }
+
+    .mx-6{
+        margin-left: -1rem;
+    }
+
+    .mx-5{
+        margin-left: 0rem !important;
+    }
+
+
+    .m6{
+        margin-top: -4.25rem !important;
+        margin-left: 7.23rem ;
+    }
+    
+    .f10{
+        font-size: 11px !important;
+      }
+
+      .bcolor{
+        border-left: solid 6px red !important;
+        width: 100%;
+      }
+}

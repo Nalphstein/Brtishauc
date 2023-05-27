@@ -1,0 +1,422 @@
+<section class="border_class">
+  <div class="container">
+    <div class="row">
+      <div class="row mt-5 text-light">
+        <div class="col-12 col-md-6">
+          <h2 class="1h-lg mb-3">
+            Learn and <br class="brnodisplay" />Pratice at
+            <br class="brnodisplay" />
+            your own <br class="brnodisplay" />pace
+          </h2>
+
+          <p class="mb-4">
+            We are here to make you achieve that journey of
+            <br class="brnodisplay" />
+            a seamless online learning
+          </p>
+
+          <div class="input-group mb-5">
+            <input
+              type="text"
+              class="form-control bg-info text-white rounded-4"
+              placeholder="search for courses"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-primary rounded-4 mx-6 px-4" type="button">
+                search
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="d-flex flex-wrap">
+            <img
+              [src]="amicoImage"
+              alt=""
+              class="img-fluid"
+              style="width: 350px"
+            />
+
+            <div class="d-flex flex-column">
+              <div
+                class="col-12 col-md-10 rounded-4 text-dark py-3 px-4 d-flex mx-5 mb-5"
+                style="background-color: whitesmoke"
+              >
+                <div
+                  class="rounded px-3 text-center"
+                  style="
+                    width: 3rem;
+                    height: 3.5rem;
+                    background-color: rgb(237, 195, 69);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-graduation-cap mt-3"
+                    style="font-size: 20px; color: white"
+                  ></i>
+                </div>
+
+                <div class="d-flex flex-column">
+                  <p class="text-start fw-bold text-dark mx-4">250K</p>
+                  <p class="text-start text-dark fw-semibold mx-3">Courses</p>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-10 rounded-4 text-dark py-3 px-3 d-flex mx-6 mb-4"
+                style="background-color: whitesmoke; width: 320px"
+              >
+                <div
+                  class="rounded px-3 text-center"
+                  style="
+                    width: 3rem;
+                    height: 3.5rem;
+                    background-color: rgb(237, 195, 69);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-graduation-cap mt-3"
+                    style="font-size: 20px; color: white"
+                  ></i>
+                </div>
+
+                <div class="d-flex flex-column">
+                  <p class="text-start fw-bold text-dark mx-4">Welldone</p>
+                  <p class="text-start text-dark fw-semibold mx-3">
+                    You have been enrolled
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-4">
+        <h1 class="text-center mt-5 fs-2">
+          <span class="text-primary"> Our </span>
+          Features
+        </h1>
+        <p class="text-center mt-2 mb-5">
+          You will take your career to the next level with KhadijatAcademy by
+          getting world class resources
+        </p>
+      </div>
+      <div
+        class="col-12 col-md-5 col-lg-3 mt-4 bg-white border shadow border-light rounded-2 text-dark text-center py-5 mx-5 mb-5"
+        *ngFor="let work of times"
+      >
+        <div
+          class="rounded px-2 m6"
+          style="
+            width: 3rem;
+            height: 3.5rem;
+            background-color: rgb(237, 103, 50);
+          "
+        >
+          <img
+            [src]="work.icon"
+            alt=""
+            class="img-fluid mt-2"
+            style="color: white"
+          />
+        </div>
+        <p class="text-primary mt-4 fw-semibold">{{ work.title }}</p>
+        <p class="text-muted">
+          with over 48 hours of lessons <br />
+          avaiable in 24/7, you wil learn <br />
+          anything you need to know to <br />
+          upskill yourself in your area of <br />
+          interest
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5" style="background-color: rgb(248, 231, 198)">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-4">
+        <h1 class="text-center mt-5 fs-2">
+          <span class="text-primary"> Explore </span>
+          Our Courses
+        </h1>
+
+        <p class="text-center mt-3 mb-5">
+          You will take your career to the next level with KhadijatAcademy by
+          getting world class resources
+        </p>
+
+        <div class="navbar-nav p-2 mx-auto">
+          <div class="d-flex align-items-center justify-content-center mb-5">
+            <li class="nav-item me-4">
+              <a
+                class="d-flex nav-link poppins f10 active_link"
+                [routerLink]="['profile']"
+                [routerLinkActive]="['active_link']"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <h4 class="ms-2 f10">Software Development</h4>
+              </a>
+            </li>
+
+            <li class="nav-item me-4">
+              <a
+                class="d-flex nav-link poppins text-dark f-10"
+                [routerLink]="['orders']"
+                [routerLinkActive]="['active_link']"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <h4 class="ms-2 f10">Graphics Designs</h4>
+              </a>
+            </li>
+
+            <li class="nav-item me-4">
+              <a
+                class="nav-link poppins text-dark f-10 d-flex"
+                [routerLink]="['Help']"
+                routerLinkActive="active_link"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <h4 class="ms-2 f10">UI/UX Designs</h4>
+              </a>
+            </li>
+
+            <li class="nav-item me-4 poppins">
+              <a
+                class="d-flex nav-link Inter text-dark f-10"
+                [routerLink]="['notifications']"
+                routerLinkActive="active_link"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <h4 class="ms-2 f10">Catering</h4>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mx-5">
+        <div
+          class="card mb-4 col-12 col-md-5 col-lg-3 mx-5"
+          *ngFor="let product of products"
+        >
+          <img
+            [src]="image1"
+            class="card-img-top"
+            alt="..."
+            class="img-fluid"
+            style="height: 200px"
+          />
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h6 class="col-8 card-title">Hands on Advanced Javascript</h6>
+              <p
+                class="col-4 card-text fw-bold text-end"
+                style="color: rgb(248, 7, 47)"
+              >
+                N9,900
+              </p>
+            </div>
+
+            <div class="mt-3 border border-bottom"></div>
+
+            <div class="d-flex justify-content-between mt-3">
+              <img
+                src="../../../assets/images/user-alex-ross-80x80.jpg"
+                alt=""
+                class="col-3 img-fluid rounded-circle"
+              />
+              <p class="card-text col-6 mt-3">
+                <small class="text-body-secondary">Kenny Ibrahim</small>
+              </p>
+              <p class="card-text col-2 mt-3">
+                <small class="text-body-secondary">
+                  <i
+                    class="fa-sharp fa-solid fa-star"
+                    style="color: #fdcc0d"
+                  ></i>
+                  5</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center justify-content-center mt-4 mb-5">
+        <button
+          type="button"
+          class="poppins fw-semibold btn btn-secondary px-5 py-2 rounded-5"
+        >
+          Explore All Courses
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mt-5">
+        <h1 class="text-start text-primary mt-5 fs-2">
+          Here are some books <br class="brnodisplay" />
+          designed for you
+        </h1>
+
+        <p class="text-start mt-3 mb-5 text-secondary">
+          You will take your career to the next level with
+          <br class="brnodisplay" />
+          KhadijatAcademy by getting world class resources
+        </p>
+
+        <div class="d-flex mt-2 mb-5">
+          <button
+            type="button"
+            class="fw-semibold btn btn-primary py-3 px-5 rounded-5"
+          >
+            Download
+          </button>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-8 mt-5 text-end">
+        <img
+          [src]="image1"
+          class="card-img-top"
+          alt="..."
+          class="img-fluid"
+          style="width: 500px"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-4">
+        <h1 class="text-center mt-5 fs-2">
+          What Our
+          <span class="text-primary">Students </span>
+          Says
+        </h1>
+
+        <p class="text-center text-muted mt-3 mb-5">
+          Here are what our online students have to say about
+          <br class="brnodisplay" />
+          KhadijatAcademy
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+
+            <div class="d-flex align-items-center justify-content-center flex-wrap">
+              <div class="col-12 col-md-6 col-lg-6 mb-5">
+                <div
+                  class="mt-4 bg-white border shadow border-light rounded-2 text-dark text-center bcolor"
+                >
+                  <p class="text-secondary mt-1 fw-semibold">
+                    "Thank you so much for your help it's exactly what <br class="brnodisplay" />
+                    i've been looking for. You won't regret it. it really <br class="brnodisplay"> saves me
+                    time and effort.KhadijatAcademy is <br class="brnodisplay"> exactly what our business has
+                    been lacking."
+                  </p>
+    
+                  <div class="d-flex align-items-center justify-content-between">
+                      <h6 class="text-center mx-2 text-secondary fw-bold ">Jessica Luo</h6>
+    
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+        
+                        <p class="card-text col-3 mx-auto mt-2">
+                            <i
+                                class="fa-sharp fa-solid fa-star"
+                                style="color: #fdcc0d;font-size: 12px;"
+                              ></i>
+                            
+                          </p>
+                        <p class="card-text col-3 mt-2">
+                            <i
+                                class="fa-sharp fa-solid fa-star"
+                                style="color: #fdcc0d;font-size: 12px;"
+                              ></i>
+                            
+                          </p>
+                        <p class="card-text mt-2 col-3">
+                            <i
+                                class="fa-sharp fa-solid fa-star"
+                                style="color: #fdcc0d; font-size: 12px;"
+                              ></i>
+                            
+                          </p>
+                        <p class="card-text mt-2 col-3">
+                            <i
+                                class="fa-sharp fa-solid fa-star"
+                                style="color: #fdcc0d; font-size: 12px;"
+                              ></i>
+                            
+                          </p>
+                        <p class="card-text col-3 mt-2">
+                            <i
+                                class="fa-sharp fa-solid fa-star"
+                                style="color: #fdcc0d; font-size: 12px;"
+                              ></i>
+                            
+                          </p>
+                        <p class="card-text col-md-6 col-lg-4">
+                            <i
+                                class="fa-sharp fa-solid fa-star"
+                                style="color: white; font-size: 12px;"
+                              ></i>
+                            
+                          </p>
+        
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="d-flex">
+                    <img [src]="amicoImage" alt="" class="img-fluid">
+
+                    <a
+                    class="mt-5 rounded-circle px-2"
+                    style="
+                      width: 3rem;
+                      height: 3.5rem;
+                      background-color: whitesmoke;
+                    "
+                  >
+                        <i class="fa-solid fa-chevron-right mt-4"  style="color: blue;"></i>
+                </a>
+
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- <div class="d-flex align-items-center justify-content-center mt-4 mb-5 ">
+      
+            <button
+              type="button"
+              class="poppins fw-semibold  btn btn-secondary px-5 rounded-5"
+            
+            >
+              Explore All Courses
+            </button>
+        </div> -->
+    </div>
+  </div>
+</section>
